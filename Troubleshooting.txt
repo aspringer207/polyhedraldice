@@ -1,0 +1,28 @@
+﻿My meshes came out wonky and missing parts of the numbers. 
+You didn’t select all the vertices when extruding faces. When extruding the faces, you need to hit A or select the meshes using the layer panel, not by dragging a box around them. When you select objects by dragging the box, some vertices are skipped. 
+
+
+My font is too big for the faces of all of my dice. 
+You can do one of two things. 
+
+
+Fix #1 is to scale the objects down individually by selecting them one by one, hitting N, changing the scale to .9 (or whatever number you may choose depending on how much you need to scale down) on the X and Y axis, and applying the scale change with CTRL-A-S.
+
+
+Alternatively, prep a new file and use a smaller point size than the default 250. 
+
+
+My font is too big for the faces of some of my dice. 
+After pasting the meshes into the document you will use to make the die, scale the objects down individually by selecting them one by one, hitting N, changing the scale to .9 (or whatever number you may choose depending on how much you need to scale down) on the X and Y axis, and applying the scale change with CTRL-A-S.
+
+
+Some or all of my numbers didn’t get on the dice. 
+Make sure you have renamed them to 1, 2, 3, etc. The script is written to call the layers based on their names.
+
+
+The measurements are in meters, and my printing software is in millimeters. 
+No problem, just change the scale in Blender or in your 3D printing software to MM.  
+
+
+I have another problem. 
+You can email me at killyourdarlingsdesigns@gmail.com.
