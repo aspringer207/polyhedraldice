@@ -4,7 +4,6 @@ bl_info = {
     "author": "Andrea Springer",
     "version": (1, 0),
     "blender": (2, 83, 0),
-    "support": "TESTING",
 }
 
 
