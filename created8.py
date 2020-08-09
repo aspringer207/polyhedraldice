@@ -1,7 +1,7 @@
 bl_info = {
     "name": "Create D8",
     "category": "Add",
-    "author": "Andrea Springer"
+    "author": "Andrea Springer",
     "description": "Creates a D8 model from user prepared numerals or symbols.",
     "tracker_url": "https://github.com/aspringer207/polyhedraldice",
     "support": "TESTING",
