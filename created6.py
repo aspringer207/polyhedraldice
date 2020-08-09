@@ -1,6 +1,8 @@
 bl_info = {
     "name": "Create D6",
     "category": "Add",
+    "version": (1, 0),
+    "blender": (2, 83, 0),
     "author": "Andrea Springer"
 }
 
