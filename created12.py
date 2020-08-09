@@ -1,9 +1,9 @@
 bl_info = {
     "name": "Create D12",
-    "version": (1, 0),
-    "blender": (2, 83, 0),
     "category": "Add",
     "author": "Andrea Springer",
+    "version": (1, 0),
+    "blender": (2, 83, 0),
 }
 
 
