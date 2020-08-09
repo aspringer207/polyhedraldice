@@ -1,7 +1,7 @@
 bl_info = {
     "name": "Create Percentile Die",
     "category": "Add",
-    "author": "Andrea Springer"
+    "author": "Andrea Springer",
     "description": "Creates a percentile die model from user prepared numerals or symbols.",
     "tracker_url": "https://github.com/aspringer207/polyhedraldice",
     "support": "TESTING",
