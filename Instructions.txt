@@ -1,0 +1,35 @@
+﻿Font Prep
+1. Open Photoshop or another image editor
+2. Type out the numbers you will need. (1-20, 30-00 in multiples of 10, a second 6 and 9, and an underscore, as well as any logos you will use to replace crits)
+3. Select your font, size it to 250pt, and keep it black.
+4. Resize your logo, if used, to the same size as the font. 
+5. Save your image as a JPG. 
+6. Find an SVG converter online and convert your photo to an SVG. 
+7. Open Blender. Import the file as an STL. 
+8. Convert all your numbers to meshes. 
+9. Go into object mode and select all, either by hitting A or by selecting in the layers, NOT by dragging a box around them, or else you will be missing vertices upon extrusion. 
+10. Extrude the faces of the meshes with E or under Extrude>Faces
+11. Join the 2 digit numbers with their corresponding pairs. (Select both of them and press CTRL J)
+12. Rename all the layers to be the numbers they represent. You must do this or the script will not work. (Name your 1 mesh “1” for example)
+13. Select all the meshes, right click, and Set Origin to Center of Mass (Volume). 
+14. Copy and paste the underscore. Move the second 6 and the underscore to location 0 0 0 by hitting N and changing the values. 
+15. Move the underscore down slightly on the Y axis. -.002 is a good place to start. Move it up or down accordingly. 
+16. Join the 6 and the underscore. Rename the new mesh to be “6 Line.”
+17. Set the origin of the new mesh to be Center of Mass: Volume. 
+18. Repeat the process with 9, renaming the second new mesh, “9 Line.” and once again setting the origin to Center of Mass: Volume. 
+19. Save your file as “Prepped fonts” or whatever you’ll remember. 
+
+
+Installing the Addon
+1. Save your files to your computer, and unzip if needed. 
+2. Open “Edit Preferences” and select the “Install” icon. 
+3. Select each .py file one by one and install. 
+4. Check the box. 
+5. When you’ve selected all the addons you plan to use, select “Save Preferences” in the bottom left hand corner of the window. 
+
+
+Using the Addon 
+1. Open your prepped file. 
+2. Click the “Add” menu and select the die you want to make. 
+3. Delete all the other numerals. 
+4. Save your file under ‘Save As’ so you don’t lose your prepped fonts.
