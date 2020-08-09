@@ -4,8 +4,6 @@ bl_info = {
     "author": "Andrea Springer",
     "version": (1, 0),
     "blender": (2, 83, 0),
-    "description": "Creates a percentile die model from user prepared numerals or symbols.",
-    "tracker_url": "https://github.com/aspringer207/polyhedraldice",
     "support": "TESTING",
 }
 
