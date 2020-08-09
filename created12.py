@@ -4,8 +4,6 @@ bl_info = {
     "blender": (2, 83, 0),
     "category": "Add",
     "author": "Andrea Springer",
-    "description": "Creates a D12 model from user prepared numerals or symbols.",
-    "tracker_url": "https://github.com/aspringer207/polyhedraldice",
     "support": "TESTING",
 }
 
