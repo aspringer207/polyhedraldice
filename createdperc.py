@@ -1,7 +1,5 @@
 bl_info = {
     "name": "Create Percentile Die",
-    "version": (1,0)
-    "blender": (2, 83, 0),
     "category": "Add",
     "author": "Andrea Springer"
     "description": "Creates a percentile die model from user prepared numerals or symbols.",
