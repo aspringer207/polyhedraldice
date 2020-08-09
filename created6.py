@@ -2,9 +2,6 @@ bl_info = {
     "name": "Create D6",
     "category": "Add",
     "author": "Andrea Springer"
-    "description": "Creates a D6 model from user prepared numerals or symbols.",
-    "tracker_url": "https://github.com/aspringer207/polyhedraldice",
-    "support": "TESTING",
 }
 
 import bpy
