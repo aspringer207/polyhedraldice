@@ -2,9 +2,6 @@ bl_info = {
     "name": "Create D10",
     "category": "Add",
     "author": "Andrea Springer"
-    "description": "Creates a D10 model from user prepared numerals or symbols.",
-    "tracker_url": "https://github.com/aspringer207/polyhedraldice",
-    "support": "TESTING",
 }
 
 
