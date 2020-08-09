@@ -1,7 +1,5 @@
 bl_info = {
     "name": "Create D20",
-    "version": (1,0)
-    "blender": (2, 83, 0),
     "category": "Add",
     "author": "Andrea Springer"
     "description": "Creates a D20 model from user prepared numerals or symbols.",
