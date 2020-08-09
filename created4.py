@@ -1,7 +1,7 @@
 bl_info = {
     "name": "Create D4",
     "category": "Add",
-     "version": (1, 0),
+    "version": (1, 0),
     "blender": (2, 83, 0),
     "author": "Andrea Springer"
 }
