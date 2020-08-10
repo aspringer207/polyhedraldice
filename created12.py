@@ -44,7 +44,7 @@ class OBJECT_OT_create_d12(bpy.types.Operator):
 
         bpy.context.object.rotation_euler.z = 0.628319
         bpy.ops.object.transform_apply(location=False, rotation=True, scale=False)
-        bpy.context.object.rotation_euler.z = 1.10706
+        bpy.context.object.rotation_euler.x = 1.10706
 
         bpy.context.view_layer.objects.active = bpy.data.objects['8']
         bpy.context.object.location.xyz = 0, 0, 9.5
