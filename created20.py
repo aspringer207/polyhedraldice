@@ -391,8 +391,6 @@ class OBJECT_OT_create_d20(bpy.types.Operator):
         bpy.data.objects.remove(bpy.data.objects["19"], do_unlink=True)
         bpy.data.objects.remove(bpy.data.objects["20"], do_unlink=True)
 
-        bpy.data.objects.remove(bpy.data.objects["Cube"], do_unlink=True)
-
         bpy.data.objects.remove(bpy.data.objects["Camera"], do_unlink=True)
 
         bpy.data.objects.remove(bpy.data.objects["Light"], do_unlink=True)
