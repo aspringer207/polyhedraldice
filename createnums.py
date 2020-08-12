@@ -1,8 +1,6 @@
 import bpy
 
-#bpy.data.fonts.load("FILE PATH TO YOUR FONT GOES HERE")
-#Remove the hashtag symbol before bpy to include this step in the process. 
-#filepath example: "C:\Windows\Fonts\Candara.ttf"
+#Remove the hashtag symbol before bpy to include the font change step in the process. 
 
 
 for i in range(0,21,1):
