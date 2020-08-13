@@ -1,6 +1,9 @@
 import bpy
 
+#Numeral Prep Script
+#Authored by Andrea Springer
 #Remove the hashtag symbol before bpy to include the font change step in the process. 
+#Remember to create your underlines or dots as well. 
 
 
 for i in range(0,21,1):
