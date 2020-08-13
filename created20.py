@@ -355,45 +355,7 @@ class OBJECT_OT_create_d20(bpy.types.Operator):
         bpy.ops.object.modifier_add(type='BOOLEAN')
         bpy.context.object.modifiers["Boolean"].object = bpy.data.objects["15"]
         bpy.ops.object.modifier_apply(apply_as='DATA', modifier="Boolean")
-
-        bpy.data.objects.remove(bpy.data.objects["1"], do_unlink=True)
-
-        bpy.data.objects.remove(bpy.data.objects["2"], do_unlink=True)
-
-        bpy.data.objects.remove(bpy.data.objects["3"], do_unlink=True)
-
-        bpy.data.objects.remove(bpy.data.objects["4"], do_unlink=True)
-
-        bpy.data.objects.remove(bpy.data.objects["5"], do_unlink=True)
-
-        bpy.data.objects.remove(bpy.data.objects["6"], do_unlink=True)
-
-        bpy.data.objects.remove(bpy.data.objects["7"], do_unlink=True)
-        bpy.data.objects.remove(bpy.data.objects["8"], do_unlink=True)
-
-        bpy.data.objects.remove(bpy.data.objects["9"], do_unlink=True)
-        bpy.data.objects.remove(bpy.data.objects["10"], do_unlink=True)
-        bpy.data.objects.remove(bpy.data.objects["11"], do_unlink=True)
-
-        bpy.data.objects.remove(bpy.data.objects["12"], do_unlink=True)
-
-        bpy.data.objects.remove(bpy.data.objects["13"], do_unlink=True)
-
-        bpy.data.objects.remove(bpy.data.objects["14"], do_unlink=True)
-
-        bpy.data.objects.remove(bpy.data.objects["15"], do_unlink=True)
-
-        bpy.data.objects.remove(bpy.data.objects["16"], do_unlink=True)
-
-        bpy.data.objects.remove(bpy.data.objects["17"], do_unlink=True)
-        bpy.data.objects.remove(bpy.data.objects["18"], do_unlink=True)
-
-        bpy.data.objects.remove(bpy.data.objects["19"], do_unlink=True)
-        bpy.data.objects.remove(bpy.data.objects["20"], do_unlink=True)
-
-        bpy.data.objects.remove(bpy.data.objects["Camera"], do_unlink=True)
-
-        bpy.data.objects.remove(bpy.data.objects["Light"], do_unlink=True)
+        
         return {'FINISHED'}
     
 def menu_draw(self, context):
