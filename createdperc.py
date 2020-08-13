@@ -241,31 +241,6 @@ class OBJECT_OT_create_dpct(bpy.types.Operator):
         bpy.context.object.modifiers["Boolean"].object = bpy.data.objects["90"]
         bpy.ops.object.modifier_apply(apply_as='DATA', modifier="Boolean")
 
-        objs = bpy.data.objects
-
-        objs.remove(objs["00"], do_unlink=True)
-
-        objs.remove(objs["10"], do_unlink=True)
-
-        objs.remove(objs["20"], do_unlink=True)
-
-        objs.remove(objs["30"], do_unlink=True)
-
-        objs.remove(objs["40"], do_unlink=True)
-
-        objs.remove(objs["50"], do_unlink=True)
-        
-        objs.remove(objs["60"], do_unlink=True)
-        objs.remove(objs["70"], do_unlink=True)
-
-        objs.remove(objs["80"], do_unlink=True)
-        objs.remove(objs["90"], do_unlink=True)
-        objs.remove(objs["Cone"], do_unlink=True)
-        
-        objs.remove(objs["Camera"], do_unlink=True)
-
-        objs.remove(objs["Light"], do_unlink=True)
-
         return {'FINISHED'}
 
 def menu_draw(self, context):
