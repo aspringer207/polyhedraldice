@@ -31,15 +31,16 @@ FontLine.data.body = "_"
 bpy.context.collection.objects.link(FontLine)
 
 
-#for i in range(0, 29, 1):
+#for i in range(0, 30, 1):
     #fontfilepath = 'YOUR FILEPATH HERE'
     #bpy.data.curves[i].font = bpy.data.fonts.load(fontfilepath)
 
-for i in range (0, 29, 1):
+for i in range (0, 30, 1):
     obj = bpy.data.objects[i] 
     bpy.context.view_layer.objects.active = obj
     bpy.context.object.select_set( state = True, view_layer = None)
     bpy.ops.object.convert(target='MESH', keep_original=False)
+  
     
 
 bpy.ops.object.mode_set( mode   = 'EDIT'   )
@@ -52,7 +53,7 @@ bpy.ops.mesh.extrude_region_move(
 
 bpy.ops.object.mode_set( mode = 'OBJECT' )
 
-for i in range (0, 29, 1):
+for i in range (0, 30, 1):
     obj = bpy.data.objects[i]
     bpy.context.view_layer.objects.active = obj
     bpy.ops.object.origin_set(type='ORIGIN_CENTER_OF_VOLUME')
