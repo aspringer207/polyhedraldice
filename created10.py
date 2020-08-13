@@ -240,33 +240,7 @@ class OBJECT_OT_create_d10(bpy.types.Operator):
         bpy.ops.object.modifier_add(type='BOOLEAN')
         bpy.context.object.modifiers["Boolean"].object = bpy.data.objects["3"]
         bpy.ops.object.modifier_apply(apply_as='DATA', modifier="Boolean")
-        
-        objs = bpy.data.objects
-
-        objs.remove(objs["1"], do_unlink=True)
-
-        objs.remove(objs["2"], do_unlink=True)
-
-        objs.remove(objs["3"], do_unlink=True)
-
-        objs.remove(objs["4"], do_unlink=True)
-
-        objs.remove(objs["5"], do_unlink=True)
-
-        objs.remove(objs["6"], do_unlink=True)
-        
-        objs.remove(objs["7"], do_unlink=True)
-        objs.remove(objs["8"], do_unlink=True)
-
-        objs.remove(objs["9"], do_unlink=True)
-        objs.remove(objs["0"], do_unlink=True)
-        objs.remove(objs["Cone"], do_unlink=True)
-        
-        objs.remove(objs["Camera"], do_unlink=True)
-        
-
-        objs.remove(objs["Light"], do_unlink=True)
-
+       
         return {'FINISHED'}
 
 def menu_draw(self, context):
