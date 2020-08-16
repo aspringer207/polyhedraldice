@@ -240,6 +240,11 @@ class OBJECT_OT_create_d10(bpy.types.Operator):
         bpy.ops.object.modifier_add(type='BOOLEAN')
         bpy.context.object.modifiers["Boolean"].object = bpy.data.objects["3"]
         bpy.ops.object.modifier_apply(apply_as='DATA', modifier="Boolean")
+        
+        bpy.context.view_layer.objects.active = bpy.data.objects['Cone.001']        
+        for obj in bpy.context.selected_objects:
+            obj.name = "D10"
+            obj.data.name = "D10"        
        
         return {'FINISHED'}
 
