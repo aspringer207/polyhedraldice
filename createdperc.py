@@ -240,7 +240,11 @@ class OBJECT_OT_create_dpct(bpy.types.Operator):
         bpy.ops.object.modifier_add(type='BOOLEAN')
         bpy.context.object.modifiers["Boolean"].object = bpy.data.objects["90"]
         bpy.ops.object.modifier_apply(apply_as='DATA', modifier="Boolean")
-
+        
+        bpy.context.view_layer.objects.active = bpy.data.objects['Cone.001']        
+        for obj in bpy.context.selected_objects:
+            obj.name = "DPct"
+            obj.data.name = "DPct"
         return {'FINISHED'}
 
 def menu_draw(self, context):
