@@ -185,6 +185,11 @@ class OBJECT_OT_create_d4(bpy.types.Operator):
         bpy.context.object.modifiers["Boolean"].object = bpy.data.objects["1"]
         bpy.ops.object.modifier_apply(apply_as='DATA', modifier="Boolean")
         
+        bpy.context.view_layer.objects.active = bpy.data.objects['Solid']        
+        for obj in bpy.context.selected_objects:
+            obj.name = "D4"
+            obj.data.name = "D4"        
+        
 
         return {'FINISHED'}
 
