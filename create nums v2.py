@@ -25,7 +25,7 @@ FontLine.data.body = "_"
 bpy.context.collection.objects.link(FontLine)
         
 for i in range(0, 30, 1): 
-    font_filepath = "C:\\Users\\andre\\Downloads\\noir_et_blanc\\N_E_B_B.TTF"
+    font_filepath = "YOURFILEPATHHERE"
     bpy.data.curves[i].font = bpy.data.fonts.load(filepath= font_filepath)
 
 bpy.ops.object.duplicate(
