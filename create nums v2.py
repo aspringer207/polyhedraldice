@@ -23,6 +23,16 @@ line = bpy.data.curves.new(type="FONT", name= "line")
 FontLine = bpy.data.objects.new("line", line)
 FontLine.data.body = "_" 
 bpy.context.collection.objects.link(FontLine)
+
+sixdot = bpy.data.curves.new(type="FONT", name= "6 dot")
+mysixdot = bpy.data.objects.new("line", sixdot)
+mysixdot.data.body = "6." 
+bpy.context.collection.objects.link(mysixdot)
+
+ninedot = bpy.data.curves.new(type="FONT", name= "9 dot")
+myninedot = bpy.data.objects.new("line", ninedot)
+myninedot.data.body = "9." 
+bpy.context.collection.objects.link(myninedot)
         
 for i in range(0, 30, 1): 
     font_filepath = "YOURFILEPATHHERE"
@@ -41,11 +51,11 @@ bpy.ops.object.duplicate(
          "selected_objects" : [bpy.data.objects['line']]},
         linked=True)
         
-for i in range (0, 33, 1):
+for i in range (0, 35, 1):
     obj = bpy.data.objects[i]
     bpy.ops.object.make_single_user(object=True, obdata=True, material=False, animation=False)
 
-for i in range (0, 33, 1):
+for i in range (0, 35, 1):
     obj = bpy.data.objects[i] 
     bpy.context.view_layer.objects.active = obj
     bpy.context.object.select_set( state = True, view_layer = None)
@@ -62,7 +72,7 @@ bpy.ops.mesh.extrude_region_move(
 
 bpy.ops.object.mode_set( mode = 'OBJECT' )
 
-for i in range (0, 33, 1):
+for i in range (0, 35, 1):
     obj = bpy.data.objects[i]
     bpy.context.view_layer.objects.active = obj
     bpy.ops.object.origin_set(type='ORIGIN_CENTER_OF_VOLUME')
