@@ -20,9 +20,33 @@
 19. Save your file as “Prepped fonts” or whatever you’ll remember. 
 
 
+Setting Up Blender
+1. Open "Edit Preferences" and navigate to the Add-Ons tab. 
+2. Search "Extra" in the search bar. 
+3. Click the checkbox to make sure "Add Extras: Mesh" is enabled. 
+
+Optional Step for Size Tests
+1. Paste 6 copies of the number 4 and one copy of the number 40 from your prepped fonts into a new file. 
+2. Open the Size Test script that is included in the repository from Blender's text editor. 
+3. Run the script. The numerals should be where you want them on the faces. 
+
+4. If you need to rescale the dice, select all the dice in the layers panel, and click the "Object" dropdown menu.
+5. If you mouse over "Transform" one of the options is to click "Scale." Click that option. 
+6. Click anywhere, and use the panel in the bottom left hand corner of the screen to change the scale to your liking. .5 will halve the selection, etc. 
+
+7. If you need to center the numbers differently, ensure your 3D cursor is at 0, 0, 0. 
+8. Then, move each numeral individually to where you want it to be centered around the origin. 
+9. Right click the object, and choose "Set Origin: Set to 3D cursor."
+
+10. To change the depth of the numbers, open up the script in python that you want to change. 
+11. For each numeral, there will be a command in the script that sets the z dimension of the numeral to 2. There will be as many instances in the script as there are faces of the die. 
+12. Change the 2 to the number of millimeters deep you want your numerals to be. 
+
+
+
 Installing the Addon
 1. Save your files to your computer, and unzip if needed. 
-2. Open “Edit Preferences” and select the “Install” icon. 
+2. Open “Edit Preferences” and select the “Install” icon in the Add-Ons tab. 
 3. Select each .py file one by one and install. 
 4. Check the box. 
 5. When you’ve selected all the addons you plan to use, select “Save Preferences” in the bottom left hand corner of the window. 
