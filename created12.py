@@ -39,7 +39,7 @@ class OBJECT_OT_create_d12(bpy.types.Operator):
 
         bpy.ops.object.modifier_add(type='BOOLEAN')
         bpy.context.object.modifiers["Boolean"].object = bpy.data.objects["12"]
-        bpy.ops.object.modifier_apply(apply_as='DATA', modifier='Boolean')
+        bpy.ops.object.modifier_apply(modifier='Boolean', report=False)
 
         bpy.context.object.rotation_euler.z = 0.628319
         bpy.ops.object.transform_apply(location=False, rotation=True, scale=False)
