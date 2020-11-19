@@ -30,7 +30,7 @@ class OBJECT_OT_create_d6(bpy.types.Operator):
         bpy.context.view_layer.objects.active = bpy.data.objects['Cube']
         bpy.ops.object.modifier_add(type='BOOLEAN')
         bpy.context.object.modifiers["Boolean"].object = bpy.data.objects['6']
-        bpy.ops.object.modifier_apply(apply_as='DATA', modifier="Boolean")
+        bpy.ops.object.modifier_apply(modifier='Boolean', report=False)
 
         bpy.context.object.rotation_euler[2] = 1.5708
         bpy.ops.object.transform_apply(location=False, rotation=True, scale=False)
@@ -48,7 +48,7 @@ class OBJECT_OT_create_d6(bpy.types.Operator):
         bpy.context.view_layer.objects.active = bpy.data.objects['Cube']
         bpy.ops.object.modifier_add(type='BOOLEAN')
         bpy.context.object.modifiers["Boolean"].object = bpy.data.objects['2']
-        bpy.ops.object.modifier_apply(apply_as='DATA', modifier="Boolean")
+        bpy.ops.object.modifier_apply(modifier='Boolean', report=False)
 
         bpy.context.object.rotation_euler[2] = 1.5708
         bpy.ops.object.transform_apply(location=False, rotation=True, scale=False)
@@ -66,7 +66,7 @@ class OBJECT_OT_create_d6(bpy.types.Operator):
         bpy.context.view_layer.objects.active = bpy.data.objects['Cube']
         bpy.ops.object.modifier_add(type='BOOLEAN')
         bpy.context.object.modifiers["Boolean"].object = bpy.data.objects['4']
-        bpy.ops.object.modifier_apply(apply_as='DATA', modifier="Boolean")
+        bpy.ops.object.modifier_apply(modifier='Boolean', report=False)
 
         bpy.context.object.rotation_euler[0] = 3.14159
         bpy.ops.object.transform_apply(location=False, rotation=True, scale=False)
@@ -82,7 +82,7 @@ class OBJECT_OT_create_d6(bpy.types.Operator):
         bpy.context.view_layer.objects.active = bpy.data.objects['Cube']
         bpy.ops.object.modifier_add(type='BOOLEAN')
         bpy.context.object.modifiers["Boolean"].object = bpy.data.objects['3']
-        bpy.ops.object.modifier_apply(apply_as='DATA', modifier="Boolean")
+        bpy.ops.object.modifier_apply(modifier='Boolean', report=False)
 
         bpy.context.object.rotation_euler[2] = -1.5708
         bpy.ops.object.transform_apply(location=False, rotation=True, scale=False)
@@ -100,7 +100,7 @@ class OBJECT_OT_create_d6(bpy.types.Operator):
         bpy.context.view_layer.objects.active = bpy.data.objects['Cube']
         bpy.ops.object.modifier_add(type='BOOLEAN')
         bpy.context.object.modifiers["Boolean"].object = bpy.data.objects['1']
-        bpy.ops.object.modifier_apply(apply_as='DATA', modifier="Boolean")
+        bpy.ops.object.modifier_apply(modifier='Boolean', report=False)
 
         bpy.context.object.rotation_euler[2] = -1.5708
         bpy.ops.object.transform_apply(location=False, rotation=True, scale=False)
@@ -118,7 +118,7 @@ class OBJECT_OT_create_d6(bpy.types.Operator):
         bpy.context.view_layer.objects.active = bpy.data.objects['Cube']
         bpy.ops.object.modifier_add(type='BOOLEAN')
         bpy.context.object.modifiers["Boolean"].object = bpy.data.objects['5']
-        bpy.ops.object.modifier_apply(apply_as='DATA', modifier="Boolean")      
+        bpy.ops.object.modifier_apply(modifier='Boolean', report=False)      
 
         bpy.context.view_layer.objects.active = bpy.data.objects['Cube']        
         for obj in bpy.context.selected_objects:

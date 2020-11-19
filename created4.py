@@ -7,8 +7,6 @@ bl_info = {
 }
 
 import bpy
-import bmesh
-from bpy_extras.object_utils import AddObjectHelper
 
 class OBJECT_OT_create_d4(bpy.types.Operator):
     """D4 Generation Script"""     
@@ -18,7 +16,6 @@ class OBJECT_OT_create_d4(bpy.types.Operator):
 
     def execute(self, context):
         
-        objs = bpy.data.objects
         
         bpy.ops.mesh.primitive_solid_add()
 
@@ -40,7 +37,7 @@ class OBJECT_OT_create_d4(bpy.types.Operator):
         bpy.context.view_layer.objects.active = bpy.data.objects['Solid']
         bpy.ops.object.modifier_add(type='BOOLEAN')
         bpy.context.object.modifiers["Boolean"].object = bpy.data.objects["4"]
-        bpy.ops.object.modifier_apply(apply_as='DATA', modifier="Boolean")
+        bpy.ops.object.modifier_apply(modifier='Boolean', report=False)
 
         bpy.context.object.rotation_euler[0] = -0.339816
         bpy.ops.object.transform_apply(location=False, rotation=True, scale=False)
@@ -52,7 +49,7 @@ class OBJECT_OT_create_d4(bpy.types.Operator):
         bpy.context.view_layer.objects.active = bpy.data.objects['Solid']
         bpy.ops.object.modifier_add(type='BOOLEAN')
         bpy.context.object.modifiers["Boolean"].object = bpy.data.objects["4"]
-        bpy.ops.object.modifier_apply(apply_as='DATA', modifier="Boolean")
+        bpy.ops.object.modifier_apply(modifier='Boolean', report=False)
 
         bpy.context.object.rotation_euler[0] = -0.339816
         bpy.ops.object.transform_apply(location=False, rotation=True, scale=False)
@@ -64,7 +61,7 @@ class OBJECT_OT_create_d4(bpy.types.Operator):
         bpy.context.view_layer.objects.active = bpy.data.objects['Solid']
         bpy.ops.object.modifier_add(type='BOOLEAN')
         bpy.context.object.modifiers["Boolean"].object = bpy.data.objects["4"]
-        bpy.ops.object.modifier_apply(apply_as='DATA', modifier="Boolean")
+        bpy.ops.object.modifier_apply(modifier='Boolean', report=False)
 
         bpy.context.object.rotation_euler[2] = 2.0944
         bpy.ops.object.transform_apply(location=False, rotation=True, scale=False)
@@ -77,7 +74,7 @@ class OBJECT_OT_create_d4(bpy.types.Operator):
         bpy.context.view_layer.objects.active = bpy.data.objects['Solid']
         bpy.ops.object.modifier_add(type='BOOLEAN')
         bpy.context.object.modifiers["Boolean"].object = bpy.data.objects["3"]
-        bpy.ops.object.modifier_apply(apply_as='DATA', modifier="Boolean")
+        bpy.ops.object.modifier_apply(modifier='Boolean', report=False)
 
 
         bpy.context.object.rotation_euler[0] = -0.339816
@@ -90,7 +87,7 @@ class OBJECT_OT_create_d4(bpy.types.Operator):
         bpy.context.view_layer.objects.active = bpy.data.objects['Solid']
         bpy.ops.object.modifier_add(type='BOOLEAN')
         bpy.context.object.modifiers["Boolean"].object = bpy.data.objects["3"]
-        bpy.ops.object.modifier_apply(apply_as='DATA', modifier="Boolean")
+        bpy.ops.object.modifier_apply(modifier='Boolean', report=False)
 
         bpy.context.object.rotation_euler[0] = -0.339816
         bpy.ops.object.transform_apply(location=False, rotation=True, scale=False)
@@ -102,7 +99,7 @@ class OBJECT_OT_create_d4(bpy.types.Operator):
         bpy.context.view_layer.objects.active = bpy.data.objects['Solid']
         bpy.ops.object.modifier_add(type='BOOLEAN')
         bpy.context.object.modifiers["Boolean"].object = bpy.data.objects["3"]
-        bpy.ops.object.modifier_apply(apply_as='DATA', modifier="Boolean")
+        bpy.ops.object.modifier_apply(modifier='Boolean', report=False)
 
         bpy.context.object.rotation_euler[2] = 2.0944
         bpy.ops.object.transform_apply(location=False, rotation=True, scale=False)
@@ -115,7 +112,7 @@ class OBJECT_OT_create_d4(bpy.types.Operator):
         bpy.context.view_layer.objects.active = bpy.data.objects['Solid']
         bpy.ops.object.modifier_add(type='BOOLEAN')
         bpy.context.object.modifiers["Boolean"].object = bpy.data.objects["2"]
-        bpy.ops.object.modifier_apply(apply_as='DATA', modifier="Boolean")
+        bpy.ops.object.modifier_apply(modifier='Boolean', report=False)
 
 
         bpy.context.object.rotation_euler[0] = -0.339816
@@ -128,7 +125,7 @@ class OBJECT_OT_create_d4(bpy.types.Operator):
         bpy.context.view_layer.objects.active = bpy.data.objects['Solid']
         bpy.ops.object.modifier_add(type='BOOLEAN')
         bpy.context.object.modifiers["Boolean"].object = bpy.data.objects["2"]
-        bpy.ops.object.modifier_apply(apply_as='DATA', modifier="Boolean")
+        bpy.ops.object.modifier_apply(modifier='Boolean', report=False)
 
         bpy.context.object.rotation_euler[0] = -0.339816
         bpy.ops.object.transform_apply(location=False, rotation=True, scale=False)
@@ -140,7 +137,7 @@ class OBJECT_OT_create_d4(bpy.types.Operator):
         bpy.context.view_layer.objects.active = bpy.data.objects['Solid']
         bpy.ops.object.modifier_add(type='BOOLEAN')
         bpy.context.object.modifiers["Boolean"].object = bpy.data.objects["2"]
-        bpy.ops.object.modifier_apply(apply_as='DATA', modifier="Boolean")
+        bpy.ops.object.modifier_apply(modifier='Boolean', report=False)
 
 
         bpy.context.object.rotation_euler[2] = 2.0944
@@ -158,7 +155,7 @@ class OBJECT_OT_create_d4(bpy.types.Operator):
         bpy.context.view_layer.objects.active = bpy.data.objects['Solid']
         bpy.ops.object.modifier_add(type='BOOLEAN')
         bpy.context.object.modifiers["Boolean"].object = bpy.data.objects["1"]
-        bpy.ops.object.modifier_apply(apply_as='DATA', modifier="Boolean")
+        bpy.ops.object.modifier_apply(modifier='Boolean', report=False)
 
 
         bpy.context.object.rotation_euler[0] = -0.339816
@@ -171,7 +168,7 @@ class OBJECT_OT_create_d4(bpy.types.Operator):
         bpy.context.view_layer.objects.active = bpy.data.objects['Solid']
         bpy.ops.object.modifier_add(type='BOOLEAN')
         bpy.context.object.modifiers["Boolean"].object = bpy.data.objects["1"]
-        bpy.ops.object.modifier_apply(apply_as='DATA', modifier="Boolean")
+        bpy.ops.object.modifier_apply(modifier='Boolean', report=False)
 
         bpy.context.object.rotation_euler[0] = -0.339816
         bpy.ops.object.transform_apply(location=False, rotation=True, scale=False)
@@ -183,7 +180,7 @@ class OBJECT_OT_create_d4(bpy.types.Operator):
         bpy.context.view_layer.objects.active = bpy.data.objects['Solid']
         bpy.ops.object.modifier_add(type='BOOLEAN')
         bpy.context.object.modifiers["Boolean"].object = bpy.data.objects["1"]
-        bpy.ops.object.modifier_apply(apply_as='DATA', modifier="Boolean")
+        bpy.ops.object.modifier_apply(modifier='Boolean', report=False)
         
         bpy.context.view_layer.objects.active = bpy.data.objects['Solid']        
         for obj in bpy.context.selected_objects:

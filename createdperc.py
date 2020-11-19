@@ -30,7 +30,7 @@ class OBJECT_OT_create_dpct(bpy.types.Operator):
         bpy.ops.object.modifier_add(type='BOOLEAN')
         bpy.context.object.modifiers["Boolean"].operation = 'INTERSECT'
         bpy.context.object.modifiers["Boolean"].object = bpy.data.objects["Cone"]
-        bpy.ops.object.modifier_apply(apply_as='DATA', modifier="Boolean")
+        bpy.ops.object.modifier_apply(modifier='Boolean', report=False)
 
         bpy.context.object.rotation_euler[0] = -0.947714
         bpy.ops.object.transform_apply(location=False, rotation=True, scale=False)
@@ -53,7 +53,7 @@ class OBJECT_OT_create_dpct(bpy.types.Operator):
         bpy.context.view_layer.objects.active = bpy.data.objects['Cone.001']
         bpy.ops.object.modifier_add(type='BOOLEAN')
         bpy.context.object.modifiers["Boolean"].object = bpy.data.objects["00"]
-        bpy.ops.object.modifier_apply(apply_as='DATA', modifier="Boolean")
+        bpy.ops.object.modifier_apply(modifier='Boolean', report=False)
 
         bpy.context.object.rotation_euler[0] = -0.6230825
         bpy.ops.object.transform_apply(location=False, rotation=True, scale=False)
@@ -74,7 +74,7 @@ class OBJECT_OT_create_dpct(bpy.types.Operator):
         bpy.context.view_layer.objects.active = bpy.data.objects['Cone.001']
         bpy.ops.object.modifier_add(type='BOOLEAN')
         bpy.context.object.modifiers["Boolean"].object = bpy.data.objects["80"]
-        bpy.ops.object.modifier_apply(apply_as='DATA', modifier="Boolean")
+        bpy.ops.object.modifier_apply(modifier='Boolean', report=False)
 
         bpy.context.object.rotation_euler[0] = -0.6230825
         bpy.ops.object.transform_apply(location=False, rotation=True, scale=False)
@@ -95,7 +95,7 @@ class OBJECT_OT_create_dpct(bpy.types.Operator):
         bpy.context.view_layer.objects.active = bpy.data.objects['Cone.001']
         bpy.ops.object.modifier_add(type='BOOLEAN')
         bpy.context.object.modifiers["Boolean"].object = bpy.data.objects["20"]
-        bpy.ops.object.modifier_apply(apply_as='DATA', modifier="Boolean")
+        bpy.ops.object.modifier_apply(modifier='Boolean', report=False)
 
         bpy.context.object.rotation_euler[0] = -0.6230825
         bpy.ops.object.transform_apply(location=False, rotation=True, scale=False)
@@ -116,7 +116,7 @@ class OBJECT_OT_create_dpct(bpy.types.Operator):
         bpy.context.view_layer.objects.active = bpy.data.objects['Cone.001']
         bpy.ops.object.modifier_add(type='BOOLEAN')
         bpy.context.object.modifiers["Boolean"].object = bpy.data.objects["60"]
-        bpy.ops.object.modifier_apply(apply_as='DATA', modifier="Boolean")
+        bpy.ops.object.modifier_apply(modifier='Boolean', report=False)
 
         bpy.context.object.rotation_euler[0] = -0.6230825
         bpy.ops.object.transform_apply(location=False, rotation=True, scale=False)
@@ -137,7 +137,7 @@ class OBJECT_OT_create_dpct(bpy.types.Operator):
         bpy.context.view_layer.objects.active = bpy.data.objects['Cone.001']
         bpy.ops.object.modifier_add(type='BOOLEAN')
         bpy.context.object.modifiers["Boolean"].object = bpy.data.objects["40"]
-        bpy.ops.object.modifier_apply(apply_as='DATA', modifier="Boolean")
+        bpy.ops.object.modifier_apply(modifier='Boolean', report=False)
 
         bpy.context.object.rotation_euler[0] = 3.1415927
         bpy.ops.object.transform_apply(location=False, rotation=True, scale=False)
@@ -155,7 +155,7 @@ class OBJECT_OT_create_dpct(bpy.types.Operator):
         bpy.context.view_layer.objects.active = bpy.data.objects['Cone.001']
         bpy.ops.object.modifier_add(type='BOOLEAN')
         bpy.context.object.modifiers["Boolean"].object = bpy.data.objects["50"]
-        bpy.ops.object.modifier_apply(apply_as='DATA', modifier="Boolean")
+        bpy.ops.object.modifier_apply(modifier='Boolean', report=False)
 
         bpy.context.object.rotation_euler[0] = -0.6230825
         bpy.ops.object.transform_apply(location=False, rotation=True, scale=False)
@@ -176,7 +176,7 @@ class OBJECT_OT_create_dpct(bpy.types.Operator):
         bpy.context.view_layer.objects.active = bpy.data.objects['Cone.001']
         bpy.ops.object.modifier_add(type='BOOLEAN')
         bpy.context.object.modifiers["Boolean"].object = bpy.data.objects["30"]
-        bpy.ops.object.modifier_apply(apply_as='DATA', modifier="Boolean")
+        bpy.ops.object.modifier_apply(modifier='Boolean', report=False)
 
         bpy.context.object.rotation_euler[0] = -0.6230825
         bpy.ops.object.transform_apply(location=False, rotation=True, scale=False)
@@ -197,7 +197,7 @@ class OBJECT_OT_create_dpct(bpy.types.Operator):
         bpy.context.view_layer.objects.active = bpy.data.objects['Cone.001']
         bpy.ops.object.modifier_add(type='BOOLEAN')
         bpy.context.object.modifiers["Boolean"].object = bpy.data.objects["70"]
-        bpy.ops.object.modifier_apply(apply_as='DATA', modifier="Boolean")
+        bpy.ops.object.modifier_apply(modifier='Boolean', report=False)
 
         bpy.context.object.rotation_euler[0] = -0.6230825
         bpy.ops.object.transform_apply(location=False, rotation=True, scale=False)
@@ -218,7 +218,7 @@ class OBJECT_OT_create_dpct(bpy.types.Operator):
         bpy.context.view_layer.objects.active = bpy.data.objects['Cone.001']
         bpy.ops.object.modifier_add(type='BOOLEAN')
         bpy.context.object.modifiers["Boolean"].object = bpy.data.objects["10"]
-        bpy.ops.object.modifier_apply(apply_as='DATA', modifier="Boolean")
+        bpy.ops.object.modifier_apply(modifier='Boolean', report=False)
 
         bpy.context.object.rotation_euler[0] = -0.6230825
         bpy.ops.object.transform_apply(location=False, rotation=True, scale=False)
@@ -239,7 +239,7 @@ class OBJECT_OT_create_dpct(bpy.types.Operator):
         bpy.context.view_layer.objects.active = bpy.data.objects['Cone.001']
         bpy.ops.object.modifier_add(type='BOOLEAN')
         bpy.context.object.modifiers["Boolean"].object = bpy.data.objects["90"]
-        bpy.ops.object.modifier_apply(apply_as='DATA', modifier="Boolean")
+        bpy.ops.object.modifier_apply(modifier='Boolean', report=False)
         
         bpy.context.view_layer.objects.active = bpy.data.objects['Cone.001']        
         for obj in bpy.context.selected_objects:
