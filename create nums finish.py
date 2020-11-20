@@ -9,7 +9,7 @@ bpy.ops.mesh.extrude_region_move(
 
 bpy.ops.object.mode_set( mode = 'OBJECT' )
 
-for i in range (0, 29, 1):
+for i in range (0, 31, 1):
     obj = bpy.data.objects[i]
     bpy.context.view_layer.objects.active = obj
     bpy.ops.object.origin_set(type='ORIGIN_CENTER_OF_VOLUME')
