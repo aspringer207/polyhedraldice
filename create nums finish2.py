@@ -18,7 +18,7 @@ class OBJECT_OT_finish_nums(bpy.types.Operator):
 
         ob1 = bpy.context.scene.objects["1"]       # Get the object
         bpy.ops.object.select_all(action='DESELECT') # Deselect all objects
-        bpy.context.view_layer.objects.active = ob1   # Make the cube the active object 
+        bpy.context.view_layer.objects.active = ob1   # Make the number 0 the active object 
         ob1.select_set(True)
         bpy.ops.object.select_all(action='SELECT') 
 
