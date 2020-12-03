@@ -1,9 +1,9 @@
 bl_info = {
-"name": "Create Number Curves",
-"category": "Add",
-"author": "Andrea Springer",
-"version": (1, 0),
-"blender": (2, 90, 0),
+    "name": "Create Number Curves",
+    "category": "Add",
+    "author": "Andrea Springer",
+    "version": (1, 0),
+    "blender": (2, 90, 0),
 }
 
 import bpy
