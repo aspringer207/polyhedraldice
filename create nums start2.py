@@ -1,23 +1,4 @@
 bl_info = {
-    "name": "Create Number Curves",
-    "category": "Add",
-    "author": "Andrea Springer",
-    "version": (1, 0),
-    "blender": (2, 90, 0),
-    }
-
-import bpy
-
-
-class OBJECT_OT_create_num_curves(bpy.types.Operator):
-    """Number Curve Generation Script"""
-    bl_idname = "object.create_num_curves"        
-    bl_label = "Create Number Curves"         
-    bl_options = {'REGISTER', 'UNDO'}  
-
-def execute(self, context):
-
-    bl_info = {
 "name": "Create Number Curves",
 "category": "Add",
 "author": "Andrea Springer",
